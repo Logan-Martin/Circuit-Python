@@ -1,4 +1,3 @@
-# Circuit-Pyth0on
 # CircuitPython
  The follwing files are my first foray into CircuitPython.
 ## Table of Contents
