@@ -64,7 +64,7 @@ Youtube Video of the Servo Code Working: https://www.youtube.com/watch?v=Zwhp-15
 ### Images
 
 ### Reflection
-
+I have become better at coding with ciruit python. So far everything has been changing other people's code and failing at writing my own, but I am learning.
 
 
 
