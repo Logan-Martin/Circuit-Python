@@ -62,9 +62,11 @@ while True:
 Youtube Video of the Servo Code Working: https://www.youtube.com/watch?v=Zwhp-15UYDY
 
 ### Images
+![image of servo](https://user-images.githubusercontent.com/71342159/133262278-f83a713a-2d46-486a-9fe9-013440e6b799.png)
+
 
 ### Reflection
-I have become better at coding with ciruit python. So far everything has been changing other people's code and failing at writing my own, but I am learning.
+I have become better at coding with ciruit python. So far everything has been changing other people's code and failing at writing my own, but I am learning. 9/13/2021.
 
 
 
