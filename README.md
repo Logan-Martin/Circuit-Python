@@ -57,6 +57,47 @@ while True:
         time.sleep(0.05)
 
 ```
+Spicy version:
+```python
+from adafruit_motor import servo
+
+# create a PWMOut object on Pin A2.
+pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
+
+# Create a servo object, my_servo.
+my_servo = servo.Servo(pwm)
+
+touch_pad = board  # Will not work for Circuit Playground Express!
+
+touch = touchio.TouchIn(touch_pad.A0)
+touchTwo = touchio.TouchIn(touch_pad.A1)
+
+testValue = 0
+
+
+while True:
+    if testValue >= 180:
+        testValue = 90
+
+    if testValue <= 0:
+        testValue = 90
+    
+    
+    if touch.value:
+        print("move left!")
+        my_servo.angle = testValue
+        testValue = testValue + 10
+        time.sleep(0.05)
+    time.sleep(0.05)
+    
+    if touchTwo.value:
+        print("move right!")
+        my_servo.angle = testValue
+        testValue = testValue - 10        
+        time.sleep(0.05)
+
+    time.sleep(0.05)
+```
 
 ### Evidence
 Youtube Video of the Servo Code Working: https://www.youtube.com/watch?v=Zwhp-15UYDY
