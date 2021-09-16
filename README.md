@@ -102,7 +102,7 @@ while True:
 ### Evidence
 Youtube Video of the Servo Code Working: https://www.youtube.com/watch?v=Zwhp-15UYDY
 
-<img src="https://user-images.githubusercontent.com/71342159/133619724-9c6e58cb-32ec-4157-b4d0-c997c9996b8c.gif" width="40" height="40" />
+<img src="https://user-images.githubusercontent.com/71342159/133619724-9c6e58cb-32ec-4157-b4d0-c997c9996b8c.gif" width="250" height="250" />
 ### Reflection
 I have become better at coding with ciruit python. So far everything has been changing other people's code and failing at writing my own, but I am learning. 9/13/2021.
 
