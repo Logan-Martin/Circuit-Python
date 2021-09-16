@@ -102,9 +102,7 @@ while True:
 ### Evidence
 Youtube Video of the Servo Code Working: https://www.youtube.com/watch?v=Zwhp-15UYDY
 
-### Images
-![image of servo](https://user-images.githubusercontent.com/71342159/133262278-f83a713a-2d46-486a-9fe9-013440e6b799.png)
-
+![turningServoNoTouchVideoForGifV1](https://user-images.githubusercontent.com/71342159/133619724-9c6e58cb-32ec-4157-b4d0-c997c9996b8c.gif)
 
 ### Reflection
 I have become better at coding with ciruit python. So far everything has been changing other people's code and failing at writing my own, but I am learning. 9/13/2021.
