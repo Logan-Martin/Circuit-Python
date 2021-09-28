@@ -26,6 +26,8 @@ I have been confused on how to accually run a file on the metro 0 board for 2 we
 
 ### Description & Code
 
+The code bellow counts up numbers and counts down when you touch the blue wire. Like a switch. The red wire will either count up or down depending on the blue wires "mode". The LCD will show if it is counting up or down.
+
 ```python
 import time
 import board
