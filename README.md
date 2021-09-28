@@ -208,7 +208,7 @@ while True:
 
 ### Evidence
 
-<img src="https://user-images.githubusercontent.com/71342159/133619724-9c6e58cb-32ec-4157-b4d0-c997c9996b8c.gif" width="250" height="250" />
+<img src="https://github.com/Logan-Martin/Circuit-Pyth0on/blob/main/ezgif-3-6dded6828d3a.gif" width="250" height="250" />
 
 ### Reflection
 
