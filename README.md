@@ -216,6 +216,12 @@ while True:
 
 Making this at first was a bit annoying as I had a different library than most people. I feel like learning from libraries is very confusing at times, api and google help a ton though.
 
+Helpful links:
+- (LCD Info) https://learn.adafruit.com/character-lcds/python-circuitpython
+- ( Cap Touch )https://learn.adafruit.com/circuitpython-essentials/circuitpython-cap-touch
+- ( If Else Statements ) https://ecampusontario.pressbooks.pub/rwsnotes/chapter/if-then-else-conditional-execution/
+
+
 ## CircuitPython Photointerrupters
 
 ### Description & Code
