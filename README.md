@@ -107,17 +107,112 @@ I have become better at coding with ciruit python. So far everything has been ch
 ### Description & Code
 
 ```python
-Code goes here
+import time
+import board
+import digitalio
+import adafruit_character_lcd.character_lcd as characterlcd
+import pwmio
+import touchio
+
+# Modify this if you have a different sized character LCD
+lcd_columns = 16
+lcd_rows = 2
+
+# Metro M0/M4 Pin Config:
+lcd_rs = digitalio.DigitalInOut(board.D7)
+lcd_en = digitalio.DigitalInOut(board.D8)
+lcd_d7 = digitalio.DigitalInOut(board.D12)
+lcd_d6 = digitalio.DigitalInOut(board.D11)
+lcd_d5 = digitalio.DigitalInOut(board.D10)
+lcd_d4 = digitalio.DigitalInOut(board.D9)
+lcd_backlight = digitalio.DigitalInOut(board.D13)
+
+# Initialise the LCD class
+lcd = characterlcd.Character_LCD_Mono(
+    lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_columns, lcd_rows, lcd_backlight
+)
+
+touch_pad = board  # Will not work for Circuit Playground Express!
+
+touch = touchio.TouchIn(touch_pad.A0)
+touchTwo = touchio.TouchIn(touch_pad.A1)
+
+testValue = 0
+
+a = 0
+b = 1
+
+goUpInValue = 1
+valueHasChangedOnceAlready = 0
+
+# This is how you turn on the backlight: ( lcd.backlight = True )
+
+# How to Print a two line message: ( lcd.message = "Hello\nCircuitPython" )
+
+# How to do a Wait: ( time.sleep(5) )
+
+# This clears the text off the LCD screen: ( lcd.clear() )
+
+# How to Print two line message right to left ( Flipping the text ):  ( lcd.text_direction = lcd.RIGHT_TO_LEFT ) and ( lcd.message = "Hello\nCircuitPython" ) on the line bellow the first one
+# /n makes a new line on the LCD
+
+# How to Return text direction to left to right ( Flipping the text to the normal way ): ( lcd.text_direction = lcd.LEFT_TO_RIGHT )
+
+# How to Display cursor ( lcd.cursor = True ) and make a print so you can see it better. ( lcd.message = "Cursor! " )
+
+# How to make cursor blink ( lcd.blink = True ) and make a print to make it make more sense ( lcd.message = "Blinky Cursor!" ) Make sure the cursor is displayed first.
+
+# Create message to scroll ( scroll_msg = "<-- Scroll") make a line bellow and put this: (lcd.message = scroll_msg )
+# this is how you make the message scroll across the screen:
+#   for i in range(len(scroll_msg)):
+#    time.sleep(0.5)
+#    lcd.move_left()
+
+# Turn backlight off ( lcd.backlight = False )
+
+while True:
+    time.sleep(.05)
+    if touch.value:
+        if goUpInValue == 1:
+            lcd.clear()
+            a = a + b
+            print(a)
+            lcd.message =  "\nGoing up:"
+            lcd.message = str(a)
+        if goUpInValue == 0:
+            lcd.clear()
+            a = a - b
+            print(a)
+            lcd.message =  "\nGoing down:"
+            lcd.message = str(a)
+
+    if touchTwo.value:
+        print("Touched blue wire")
+        if valueHasChangedOnceAlready == 0:
+            if goUpInValue == 1:
+                valueHasChangedOnceAlready = 1
+                goUpInValue = 0
+                
+        if valueHasChangedOnceAlready == 0:
+             if goUpInValue == 0:
+                valueHasChangedOnceAlready = 1
+                goUpInValue = 1
+
+
+    if valueHasChangedOnceAlready == 1:
+        time.sleep(1)
+        valueHasChangedOnceAlready = 0
+
 
 ```
 
 ### Evidence
 
+
+
 ### Reflection
 
-
-
-
+Making this at first was a bit annoying as I had a different library than most people. I feel like learning from libraries is very confusing at times, api and google help a ton though.
 
 ## NextAssignment
 
