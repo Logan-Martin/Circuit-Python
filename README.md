@@ -216,7 +216,7 @@ while True:
 
 Making this at first was a bit annoying as I had a different library than most people. I feel like learning from libraries is very confusing at times, api and google help a ton though.
 
-## NextAssignment
+## CircuitPython Photointerrupters
 
 ### Description & Code
 
