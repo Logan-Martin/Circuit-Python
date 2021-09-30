@@ -266,6 +266,9 @@ Everytime the signal gets interupted a value is counted up and prints show every
 
 ### Evidence
 
-<img src="https://github.com/Logan-Martin/Circuit-Pyth0on/blob/main/ezgif.com-gif-makerPhotoInterpreterVideo.gif" width="250" height="250" />
+<img src="https://github.com/Logan-Martin/Circuit-Pyth0on/blob/main/ezgif.com-gif-makerPhotoInterpreterVideo.gif" width="250" height="250" /> <img src="https://user-images.githubusercontent.com/71342159/135467435-10a96f0d-e143-4b89-8c0b-9f8b2f6740f1.png" width="250" height="250" />
+
 
 ### Reflection
+At first I had no idea what this would be used for, but now that I know how it works, I think it is really fun to use. Watching the numbers go up is nice after being confused for 2 classes. 2nd try on this and it worked, nice.
+
