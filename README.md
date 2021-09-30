@@ -272,3 +272,20 @@ Everytime the signal gets interupted a value is counted up and prints show every
 ### Reflection
 At first I had no idea what this would be used for, but now that I know how it works, I think it is really fun to use. Watching the numbers go up is nice after being confused for 2 classes. 2nd try on this and it worked, nice.
 
+---
+
+## Template for next assignment
+### Description & Code
+
+```python
+
+
+
+```
+
+
+### Evidence
+
+
+### Reflection
+
