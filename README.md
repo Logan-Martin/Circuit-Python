@@ -6,6 +6,7 @@
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_LCD](#CircuitPython_LCD)
 * [CircuitPython Photointerrupters](#CircuitPython_Photointerrupters)
+* 
 ---
 
 ## Hello_CircuitPython
@@ -21,6 +22,7 @@ print("This is main.Py and HELLO!!!")
 ### Reflection
 I have been confused on how to accually run a file on the metro 0 board for 2 weeks. I finally got it to run on my own by deleting all .py files but main.py, reset my board, and printed code on main.py. I still don't know exactly how it works as of 9/13/2021.
 
+---
 
 ## CircuitPython_Servo
 
@@ -100,7 +102,7 @@ Youtube Video of the Servo Code Working: https://www.youtube.com/watch?v=Zwhp-15
 ### Reflection
 I have become better at coding with ciruit python. So far everything has been changing other people's code and failing at writing my own, but I am learning. 9/13/2021.
 
-
+---
 
 ## CircuitPython_LCD
 
@@ -221,6 +223,7 @@ Helpful links:
 - ( Cap Touch )https://learn.adafruit.com/circuitpython-essentials/circuitpython-cap-touch
 - ( If Else Statements ) https://ecampusontario.pressbooks.pub/rwsnotes/chapter/if-then-else-conditional-execution/
 
+---
 
 ## CircuitPython_Photointerrupters
 
