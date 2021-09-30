@@ -227,11 +227,45 @@ Helpful links:
 ### Description & Code
 
 ```python
-Code goes here
+from digitalio import DigitalInOut, Direction, Pull
+from digitalio import DigitalInOut, Direction, Pull
+import time
+import board
+
+interrupter = DigitalInOut(board.D7)
+interrupter.direction = Direction.INPUT
+interrupter.pull = Pull.UP
+
+counter = 0
+totalInterupts = 0
+
+photo = False
+state = False
+
+max = 4
+start = time.time()
+while True:
+    photo = interrupter.value
+    if photo and not state:
+            counter += 1
+            totalInterupts += 1
+    state = photo
+
+    remaining = max - time.time()
+
+    if remaining <= 0:
+        print("Interrupts:", str(counter))
+        max = time.time() + 4
+        counter = 0
+        print("Total:", str(totalInterupts))
+
 
 ```
 
+Everytime the signal gets interupted a value is counted up and prints show every 4 seconds. The prints show how many times the signal has been interupted in the last 4 seconds and in total. 
+
 ### Evidence
+
 
 
 ### Reflection
