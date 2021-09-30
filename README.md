@@ -222,7 +222,7 @@ Helpful links:
 - ( If Else Statements ) https://ecampusontario.pressbooks.pub/rwsnotes/chapter/if-then-else-conditional-execution/
 
 
-## CircuitPython Photointerrupters
+## CircuitPython_Photointerrupters
 
 ### Description & Code
 
