@@ -8,6 +8,7 @@
 * [CircuitPython Photointerrupters](#CircuitPython_Photointerrupters)
 * 
 ---
+*Some things by: https://github.com/gventre04/CircuitPython*
 
 ## Hello_CircuitPython
 
